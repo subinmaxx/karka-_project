@@ -1,0 +1,6 @@
+print("+",'-'*50,"+")
+print("|1| {:>25}|{:>23}|".format("english","arun"))
+print("|2|{:>26}|{:>23}|".format("maths","mukesh"))
+print("|3|{:>26}|{:>23}|".format("science","priya"))
+print("|4|{:>26}|{:>23}|".format("tamil","anitha"))
+print("+","-"*50,"+")

@@ -1,0 +1,27 @@
+# days={"sunday","monday","wednesday"}
+# print(days)
+# print(days)
+# # print(days)
+# file=open("/home/subin/maxx/Untitled Document 1","w")
+# print(file.read())
+# for line in file:()
+#     print(line)
+    
+# file.write("i am a doctor")
+# file.write("i am lean")
+# file.close()
+# file=open("/home/subin/maxx/Untitled Document 1","r")
+# # print(file.read(13))
+# file=open("/home/subin/maxx/Untitled Document 1","a")
+# file.write("\t, i am hungry")
+# file.close()
+# file=open("/home/subin/maxx/Untitled Document 1","r")
+# print(file.read())
+file=open("/home/subin/maxx/Untitled Document 1","a")
+# file.write("my name ram")
+# file.close()
+# file=open("/home/subin/maxx/Untitled Document 1","r")
+# print(file.read())
+file=open("/home/subin/maxx/Untitled Document 1","a")
+file.write
+

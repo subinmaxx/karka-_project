@@ -1,0 +1,6 @@
+num1=float(input("(enter your first number)"))
+num2=float(input("enter your second number"))
+num3=float(input("enter your first number"))
+total=(num1,num2,num3)
+result=(num1+num2+num3)
+print(result/2)

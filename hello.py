@@ -1,0 +1,6 @@
+# print(23+25)
+# print("subin")
+# print(safgg)
+# print("23+45")
+print("hello")
+print("subin")

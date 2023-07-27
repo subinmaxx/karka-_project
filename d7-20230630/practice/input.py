@@ -1,0 +1,16 @@
+passed_out_year=input("which year you passed out from college")
+# print(passed_out_year)
+type_of_passed_out_year=type(passed_out_year)
+print(type_of_passed_out_year)
+passed_out_year=int(passed_out_year)
+print(type(passed_out_year))
+
+
+# input=input("enter your passed out year")
+# print(input)
+# type_input=type(input)
+# # print(type_input)
+# int_input=int(input)
+# print(int_input)
+# int_type=type(int_input)
+# print(type(int_input))
