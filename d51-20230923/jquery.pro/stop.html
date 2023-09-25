@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stopwatch</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        p{
+            text-align: center;
+            height:30px;
+            /* width:30% */
+            font-size: 40px;
+        }
+        .but1{
+            display: flex;
+            justify-content: center;
+            gap:10px
+        }
+        .but{
+            padding:10px;
+            border-radius: 6px;
+            background-color: blueviolet;
+            color: white;
+            font-size: x-large;
+            
+        }
+    </style>
+</head>
+<body >
+    <h1 >Stopwatch</h1>
+    <p class="maxx" id="display">00:00:00</p>
+   <div class="but1">
+    <button class="but" id="start">Start</button>
+    <button class="but" id="stop">Stop</button>
+    <button class=but id="reset">Reset</button> </div>
+
+    <script>
+        // Variables to track the stopwatch state
+        let isRunning = false;
+        let startTime = 0;
+        let interval;
+
+        // Function to format time as HH:MM:SS
+        function formatTime(milliseconds) {
+            const date = new Date(milliseconds);
+            return date.toISOString().substr(11, 8);
+        }
+
+        // Update the stopwatch display
+        function updateDisplay() {
+            const currentTime = isRunning ? Date.now() - startTime : startTime;
+            $('#display').text(formatTime(currentTime));
+        }
+
+        // Event handler for the Start button
+        $('#start').click(function() {
+            if (!isRunning) {
+                isRunning = true;
+                startTime = Date.now() - startTime;
+                interval = setInterval(updateDisplay, 1000);
+            }
+        });
+
+        // Event handler for the Stop button
+        $('#stop').click(function() {
+            if (isRunning) {
+                isRunning = false;
+                clearInterval(interval);
+            }
+        });
+
+        // Event handler for the Reset button
+        $('#reset').click(function() {
+            isRunning = false;
+            startTime = 0;
+            clearInterval(interval);
+            updateDisplay();
+        });
+
+        // Initial display
+        updateDisplay();
+    </script>
+</body>
+</html>

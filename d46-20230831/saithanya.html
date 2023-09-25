@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text id=name">
+    <button onclick="get()" >submit</button>
+    <script>
+    // name="subin"
+    // localStorage.setItem("name",name)
+    // var n=localStorage.getItem("name")
+    // console.log(n)
+
+    const a={
+        name:"subin",
+        degree:"B.E"
+    }
+    var b=JSON.stringify(a)
+    localStorage.setItem("data", b)
+    var ans=localStorage.getItem("data")
+    console.log(ans)
+    
+    var c=JSON.parse(localStorage.getItem("data"))
+    console.log(c)
+
+    localStorage.removeItem("name")
+    </script>
+</body>
+</html>.

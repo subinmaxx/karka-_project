@@ -1,0 +1,105 @@
+
+*{margin: 0;padding: 0;
+}
+header{
+    border:7px
+    solid violet
+}
+.box1{
+    padding:9px;
+    width:13%;
+    
+}
+.box2{
+    padding:9px;
+    width:84%;
+    display :inline-block;
+    vertical-align:top;
+    font-size: 280%;
+    text-align:right;
+
+
+}
+.box3{ 
+     
+    width:50%;
+    display: inline-block;
+    
+    
+}
+.box3 img{
+    width:100%
+}
+.box4{
+    padding:30px;
+    width:43%;
+    display:inline-block;
+    vertical-align:top;
+    
+    margin-bottom:20px
+}
+.box4 h1{
+    font-size:300%;
+    color:blueviolet;
+    margin:3px
+}
+.box4 p{
+    font-size:200%
+}
+button{
+    padding:18px 0px;
+    width:11%;
+    background-color:violet;
+    border:none;
+    border-radius:10px;
+    margin:30px 0px
+
+    
+}
+.box5{
+    padding:20px;
+    width:60%;
+    border:3px solid black;
+    background-color:violet;
+    text-align: center;
+    margin:0px auto ;
+    border:none;
+    border-radius:10px
+
+}
+.box6{
+    padding:20px 0px;
+    width:80%;
+    margin:0px auto;
+}
+.box6 img{
+    margin-right:144px ;
+    width:15%
+}
+.box7{
+    padding:20px 0px;
+    margin:0px auto;
+    width:50%
+}
+.box7 img{
+    width:20%;
+    margin-right:274px;
+}
+.box8{
+    padding:15px;
+    width:20%;
+    display:inline-block;
+    border:2px solid violet;
+    border:none
+
+}
+
+.box9{
+    padding:20px;
+    width:74%;
+    display:inline-block;
+    vertical-align: top;
+    text-align:right;
+    border:2px solid violet;
+    border:none
+}

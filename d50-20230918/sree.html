@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        *{
+           margin: 0px;
+           padding: 0px;
+        }
+        .box{
+            border: 3px solid black;
+            /* height: 100vh; */
+        }
+        .container{
+            display: inline-block;
+        }
+        header{
+            border: 2px solid black;
+            padding: 0px 15px 0px;
+            height:100px;
+            background-color: antiquewhite;
+        }
+        img{
+
+            margin-top: 15px;
+            margin-left: 20px;
+
+
+        }
+        aside{
+            /* margin-left: 10px; */
+            margin-top: 10px;
+            width: 100px;
+            height: 300px;
+            display: inline-block;
+            position: absolute;
+            z-index: 1;
+        }
+        .container2{
+            display: inline-block;
+            /* margin-left: 225px; */
+            vertical-align: middle;
+            margin-left: 95px;
+            margin-bottom: 27px;
+        }
+
+         h1{
+            display: inline-block;
+            /* margin-left: 610px; */
+            margin-bottom: 50px;
+
+
+        }
+        .container3{
+            /* display: inline-block; */
+            /* margin-left: 77px; */
+            border: 2px solid black;
+            width: 120px;
+            height: 460px;
+            background-color: rgba(0, 255, 255, 0.288);
+            float: left;
+
+        }
+       i{
+        margin-left: 15px;
+        margin-top: 10px;
+
+       }
+        h4{
+            display: inline-block;
+            color: black;
+            margin-left: 5px;
+        }
+
+        section{
+            /* /* display: inline-block; */
+            display: flex;
+            justify-content: center;
+            background-color: rgba(128, 128, 128, 0.219);
+            position: relative;
+            padding-bottom: 10px;
+
+
+        }
+        h2{
+            margin-top: 7px;
+            margin-left: 47px;
+            font-size: xx-large;
+        }
+
+       .form .name{
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+       }
+        label .name{
+            display: inline-block;
+        }
+        .cont{
+            margin-left: 86px;
+            
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <header>
+        <div class="container">
+            <img src="../images.jpeg"width="65%"height="" alt="">
+        </div>
+
+        <div class="container2">
+            <h1>Dash Board</h1>
+       </div>
+
+
+    </header>
+
+     <aside>
+
+        <button class="cont"><i class="fa-solid fa-bars fa-xl "></i></button>
+         
+
+         <div class="container3">
+
+            <i class="fa-solid fa-user"></i><a href="###"><h4>User</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-house"></i><a href="###"><h4>Home</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-envelope"></i><a href="###"><h4>Email</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-chart-simple"></i> <a href="###"><h4>Charts</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-location-dot"></i> <a href="###"><h4>Location</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-table"></i><a href="###"><h4>Tables</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-phone"></i><a href="###"> <h4>Contact</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-comment"></i><a href="###"><h4>Chat</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-user-group"></i><a href="###"><h4>Group</h4></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-rectangle-list"></i><a href="###"><h4>Forms</h4></a>
+
+
+        </div>
+    </aside>
+    <section>
+        <div class="form">
+            <h2>Forms</h2>
+
+            <br><br>
+            <label class="name" for="nnn">Name :</label> <input type="text">
+            <br><br>
+            <label class="name" for="nnn">Email ID :</label> <input type="text">
+            <br><br>
+            <label class="name" for="nnn">Contact :</label> <input type="text">
+            <br><br>
+            <label class="name" for="nnn">Address :</label> <input type="text">
+            <br><br>
+            <label class="name" for="nnn">Location :</label> <input type="text">
+            <br><br>
+            <label class="name" for="nnn">State :</label> <input type="text">
+            <br><br>
+            <label class="name" for="nnn">District :</label> <input type="text">
+            <br><br>
+            <label class="name" for="nnn">Pin Code :</label> <input type="text">
+            <br><br>
+
+        </div>
+
+
+
+
+    </section>
+
+
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+        $("container3").animate({
+            width:"toggle"
+        })
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })
+
+
+
+</script>
+</html>

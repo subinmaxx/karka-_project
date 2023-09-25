@@ -1,0 +1,9 @@
+.stopwatch{
+    width:20px
+
+}
+.container{
+     justify-content: center;
+     align-items: center;
+     display: flex;
+}

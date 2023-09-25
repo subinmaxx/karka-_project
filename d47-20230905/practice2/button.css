@@ -1,0 +1,14 @@
+.box{
+    padding:120px;
+    border:10px solid black
+
+
+}
+.box1{
+    display:flex;
+    border:3px solid black;
+    height:132px;
+    /* width:70px; */
+    /* background-color: aqua; */
+}
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://icons.getbootstrap.com/">
+    <link rel="stylesheet" href="/home/subin/karka/d46-20230831/file.css">
+</head>
+<body>
+    <div class="box">
+        <div class=box1><h1>RESUME</h1></div>
+        <div class="box2">
+            <div class="maxx1"><i class="bi bi-camera"></i></div>
+            <div class="maxx2">
+                <div class="m1">
+                    <div class="fn">
+                    <label><h3>first name</h3></label>
+                    <input type="text" placeholder="first name" id="first"> </div>
+                    <div class="fn">
+                        <label><h3>sur name</h3></label>
+                        <input type="text" placeholder="sure name" id="sur">
+                    </div>
+                    
+                </div>
+                <div class="m1">
+                    <div class="father">
+                        <label><h3> S/O</h3></label>
+                        <input type="text" placeholder="fathers name" id="s/o">
+                    </div>
+                    <div class="gender">
+                        <span>gender</span>
+                        <div><input type="radio" id="male" name="gender">
+                            <label for="male">male</label></div>
+                            <div>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">female</label></div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            
+                
+
+            
+        
+        </div>
+        <div class="box3">
+            <div class="maxx3">
+                <label><h3>address</h3></label>
+                <input type="text" placeholder="address" id="place">
+            </div>
+        </div>
+        <div class="box4">
+            <div class="maxx4">
+                <label>country</label>
+                <input type="text" placeholder="india" id="country">
+            </div>
+            <div class="maxx4">
+                <label>pincode</label>
+                <input type="number" placeholder="pin" id="code">
+            </div>
+        </div>
+        <div class="box5">
+            <div class="maxx5">
+                <label>phone</label>
+                
+                <input  type=  "number" placeholder="number" id="number">
+            </div><i class="bi bi-phone"></i>
+            <div class="maxx5">
+                <label>DOB</label>
+                <input type="text" placeholder="dd/mm/yyyy" id="year">
+            </div>
+        </div>
+        <div class="box6">
+            <div class="maxx6">
+                <label>email</label>
+                <input type="email" placeholder="email" id="email">
+            </div>
+        </div>
+        <div class="box7">
+            <h1>EDUCATION</h1>
+        </div>
+        <div class="box8">
+                <div class="maxx7">
+                    <label> SSLC</label>
+                    <input type="text" placeholder="sslc" id="sslc">
+                </div>
+                <div class="maxx7">
+                    <label>school name</label>
+                    <input type="text" placeholder="school name" id="hss">
+                </div>
+                <div class="maxx7">
+                    <label>marks</label>
+                    <input type="numbers" placeholder="total marks">
+                </div>
+        </div>
+        <div class="box9">
+            <div class="maxx8">
+                <label>HSS</label>
+                <input type="text" placeholder="sslc" id="sslc">
+            </div>
+            <div class="maxx8">
+                <label>school name</label>
+                <input type="text" placeholder="school name" id="hss">
+            </div>
+            <div class="maxx8">
+                <label>marks</label>
+                <input type="numbers" placeholder="total marks">
+            </div>
+    </div>        <div class="box10">
+        <div class="maxx9">
+            <label>DEPARTMENT</label>
+            <input type="text" placeholder="department" id="b.e">
+        </div>
+        <div class="maxx9">
+            <label>college name</label>
+            <input type="text" placeholder="college name" id="department">
+        </div>
+        <div class="maxx9">
+            <label>CGPA</label>
+            <input type="numbers" placeholder="CGPA" id="cgpa">
+        </div>
+</div>
+        <div class="box11">
+             <h1>EXPERIANCE</h1>
+</div>
+        
+      
+         <div class="box12">
+    <div class="maxx10">
+        <label>COMPANY NAME</label>
+        <input type="text" placeholder="company name" id="name">
+    </div>
+    <div class="maxx10">
+        <label>POSITION</label>
+        <input type="text" placeholder="position" id="position">
+    </div>
+    <div class="maxx10">
+        <label>NO OF YEARS</label>
+        <input type="numbers" placeholder="years" id="years">
+    </div>
+    </div> 
+
+     <div class="box13">
+        <div class="maxx11">
+            <label>COMPANY NAME</label>
+            <input type="text" placeholder="company name" id="name">
+        </div>
+        <div class="maxx11">
+            <label>POSITION</label>
+            <input type="text" placeholder="position" id="position">
+        </div>
+        <div class="maxx11">
+            <label>NO OF YEARS</label>
+            <input type="numbers" placeholder="years" id="years">
+        </div>
+        </div>
+     <button onclick="get()">submit</button>
+     
+
+
+    </div>
+    <script>
+        function get(){
+        var firstname=document.getElementById("first").value
+        var surname=document.getElementById("sur").value
+        console.log(firstname,surname)    
+    }
+    </script>
+</body>
+</html>

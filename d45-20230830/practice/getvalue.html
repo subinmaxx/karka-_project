@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="gender" value="male" onclick="getvalue()"><label>male</label>
+    <input type="radio" name="gender" value="female" onclick="getvalue()"><label>female</label>
+    <input type="radio" name="gender" value="trans" onclick="getvalue()"><label>trans</label>
+    <script>
+        function getvalue(){
+            var ele=document.getElementByName("gender");
+            console.log(ele.length);
+        }
+    </script>
+</body>
+</html>

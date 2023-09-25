@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./short.js"> </script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./short.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <nav class="nav"  class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-md">
+          <a class="atag" class="navbar-brand" href="#">logical sheets</a>
+          <i><i class="fa-solid fa-anchor fa-2xl"></i></i>
+        </div>
+      </nav>
+    <button class="but"><i class="fa-solid fa-square-check"></i></button>
+
+
+    <aside>
+
+        <!-- <button class="but"><i class="fa-solid fa-square-check"></i></button> -->
+        <div class="slidebox">
+            <i class="fa-solid fa-house"></i><a href="##">Home</a><br><br>
+            <i class="fa-solid fa-text-slash"></i><a href="##">file</a><br><br>
+            <i  class="fa-solid fa-calculator"></i><a href="/home/subin/karka/d48-20230906/practice/cal.html">calculator</a><br><br>
+            <i  class="fa-solid fa-stopwatch"></i><a href="./stop.html">stopwatch</a>  </div>
+        </div>
+ </aside>
+      
+
+
+    <section>
+        <!-- <button class="but"><i class="fa-solid fa-square-check"></i></button> -->
+
+        <div class="maxx">
+            <br><br><br><br>
+            <h2>Details</h2>
+            <br><br>
+            <label for="text">Name: </label><br> <input type="text">
+            <br><br>
+            <label for="text">E-mail:   </label><br> <input type="text">
+            <br><br>
+            <label for="text">Address:</label><br> <input type="text">
+            <br><br>
+            <label for="text">Age:  </label><br> <input type="text">
+            <br><br>
+            <label for="text">Mobile: </label><br> <input type="text">
+            <br><br>
+            <label for="text">Country: </label><br> <input type="text">
+        </div>
+    </section>
+   
+</body>
+<script>
+    $(document).ready (function(){
+        $("button").click(function(){
+            $(".slidebox").animate({
+              width:"toggle"  
+            })
+        })
+    })
+</script>
+</html>
+<!-- $(document).ready(function(){
+    $("button").click(function(){
+    $("container3").animate({
+        width:"toggle"
+    })
+    }) -->

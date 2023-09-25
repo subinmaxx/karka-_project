@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/home/subin/karka/d45-20230830/practice/login.css">
+</head>
+<body>
+    <form action="/home/subin/karka/d45-20230830/practice/login1.html">
+   <div class="box">
+    <div class="box1">
+        <h1>log in with</h1>
+    
+    <div class="box2">
+        <button class="google:">
+            <img src="/home/subin/karka/d45-20230830/Untitled.jpeg">
+            <span>google</span>
+        </button>
+        <button class="facebook:">
+            <img src="/home/subin/karka/d45-20230830/practice/Untitled.jpeg">
+            <span >facebook</span>
+        </button>
+        </div>
+        <h2>email</h2>
+        <input type="email"
+        placeholder="type your email" id="email">
+        <h2>password</h2>
+        <input type="password"
+        placeholder="type your password" id="password">
+        <div>
+        <a href="###">forget password?</a> </div>
+        <input type="submit" value="submit"
+        class="maxx" onclick="getvalue()">login</button>
+        <div>
+            <a href="###">need help?</a>
+        </div>
+
+    </div>
+   </div> 
+   <div>
+    <script>
+        function getvalue(){
+            
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            console.log("email",email,"/npassword",password);
+            var actemail="subinram19@gmail.com";
+            var actpassword="subin12345";
+            if (email==actemail & password==actpassword)
+            {
+                alert("succesfully logged in")
+                
+            }
+            else {
+               alert ("unmatched user and password")
+            }
+            obj["email"]=email
+            obj["password"]=password
+            console.log(obj);
+
+            localStorage.setItem("myvalue",email)
+        }
+        var obj1={"email":"subinram19@gmail.com","password":"subin12345","name":"subin.s"};
+        var email="subinram19@gmail.com";
+        if(email==obj1.email){
+            console.log(obj1)}
+        else{
+            console.log(no)
+        }
+
+    </script>
+   </div>
+   </form>
+</body>
+</html>

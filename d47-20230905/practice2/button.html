@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./button.css">
+    <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="d-grid gap-5 d-md-flex justify-content-md-end">
+            <button onclick="add()" class="btn btn-primary me-md-2" type="button" id="add">+</button>
+            <button id="number"></button>
+            <button onclick="sub()" class="btn btn-primary" type="button" id="sub">-</button>
+          </div>
+
+        </div>
+    </div>
+              
+    
+    
+</body>
+<script>
+    var total=0;
+    function add(){
+        var data=document.getElementById("add").value
+        total++
+        var new_data=document.getElementById("number")
+        new_data.innerHTML = total
+        // console.log(
+
+    }
+    function sub(){
+        var data1=document.getElementById("sub").value
+        var new_data1=document.getElementById("number")
+        new_data1.innerHTML = total
+        total--
+        // console.log(total)
+   }
+</script>
+</html>

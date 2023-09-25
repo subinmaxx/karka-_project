@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+</head>
+<body >
+    <div class="container-fluid">
+
+        <div class="country">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="country">
+                  countries
+                </button>
+                <div class="country-res my-5" ></div>
+                <ul class="dropdown-menu" id="country">
+                  <!-- <li><button class="dropdown-item" type="button">Action</button></li> -->
+                  
+                </ul>
+              </div>
+        </div>
+        <div class="state">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="state">
+                  states
+                </button>
+                <div class="state-res my-5" ></div>
+                <ul class="dropdown-menu" id="state">
+                  <!-- <li><button class="dropdown-item" type="button">Action</button></li> -->
+                  
+                </ul>
+              </div>
+        </div>
+        <div class="district">
+          <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="state">
+              district
+            </button>
+            <ul class="dropdown-menu" id="district">
+              <!-- <li><button class="dropdown-item" type="button">Action</button></li> -->
+              
+            </ul>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+"></script>
+</html>
+
+</body>
+<script>
+  let data = [];
+
+$.get('new.txt',(val)=>{
+    data.push(JSON.parse(val));
+    console.log(data);
+})
+
+$('.country button').click(()=>{
+
+    let countries = data[0].countries;
+
+   $('.country ul').html(' ');
+
+    for(let i=0;i<countries.length;i++){
+
+        $('.country ul').append(<li class='dropdown-item btn' onclick='getCountry(${i})'>${countries[i].countryName}</li>)
+    }
+})
+function getCountry(index){
+
+    $('.state ul').html('');
+
+    let states = data[0].countries[index].states;
+
+    for(let i=0;i<states.length;i++){
+
+        $('.state ul').append(<li class='btn dropdown-item' onclick='getState(${i},${index})'>${states[i].stateName}</li>)
+    }
+
+    $('.country-res').html(data[0].countries[index].countryName)
+}
+function getState(state_id,country_id){
+    
+    $('#district').html('');
+
+    let district = data[0].countries[country_id].states[state_id].districts;
+
+    for( i of district){
+
+        $('#district').append(<li class='dropdown-item btn'>${i}</li>)
+    }
+    $('.state-res').html(data[0].countries[country_id].states[state_id].stateName)
+}
+
+</script>
+</html>
